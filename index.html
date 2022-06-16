@@ -6,23 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina Personal</title>
+    <!-- Normalize Css -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Hoja de estilo Css -->
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/fed5ffcae9.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <div class="box">
-        <img src="./images/IMG_20190813_205802-removebg-preview.png" width="180" class="box-img">
+    <!-- Inicio de codigo HTML -->
+    <div class="list-container" data-aos="fade-right" data-aos-duration="2000">
+        <ul>
+            <li><a href="#box">Inicio</a> </li>
+            <li><a href="https://github.com/lizandronarvaez">Mis Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Invitame un cafe</a></li>
+        </ul>
+    </div>
+    <div class="box" data-aos="fade-up" data-aos-duration="2000">
+        <img src="./images/IMG_20190813_205802-removebg-preview.png" width="180" class="box-img" id="box">
         <h1>Lizandro Narvaez</h1>
         <hr>
-        <h2>Student Developer</h2>
+        <h2>Estudiante de Desarrollo Web</h2>
         <div class="dates">
-            <p>👋 Hi, I’m @lizandronarvaez</p>
-            <p class="item1">👀 I’m interested in WEB DEVELOPER.</p>
-            <p class="item2">🌱 I’m currently learning, Html, Css, Javascript, JQuery, Mysql,NodeJs</p>
-            <p class="item3">💞️ I seek to develop myself and learn to be better in the frontend, I am a self-taught
-                person, and
-                very disciplined.</p>
+            <p>👋Hola soy, Lizandro Narvaez Moran</p>
+            <p class="item1">👨‍🎓 Soy una persona autodidacta ademas de ser muy inquieto por aprender cosas nuevas</p>
+            <p class="item2">📘 Actualmente estoy perfecionando mis estudios en Html, Css, y aprendiendo nuevas
+                tecnologias como Javascript,Jquery, NodeJs, ExpressJS y gestores de base de datos como MYSQL</p>
+            <p class="item3">💭 Busco ampliar mis conocimientos en alguna empresa,ya que mi sueño es poder llegar a mi
+                objetivo de ser un Desarrollador Full-Stack </p>
         </div>
         <hr>
         <div class="javascript">
@@ -35,7 +48,7 @@
                 }</p>
         </div>
         <hr>
-        <div class="social">
+        <div class="social" id="contacto">
             <p>
                 <a href=" https://github.com/lizandronarvaez"><img
                         src="https://cdn-icons-png.flaticon.com/512/2111/2111612.png"></a>
@@ -46,7 +59,10 @@
         </div><br>
         <span>Contact</span>
     </div>
-
+    <!-- Fin de codigo HTML -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
