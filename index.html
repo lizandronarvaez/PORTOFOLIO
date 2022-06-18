@@ -12,12 +12,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
     <!-- Inicio de codigo HTML -->
-    <div class="list-container" data-aos="fade-right" data-aos-duration="2000">
-        <ul>
+    <!-- <div class="hamburger" onclick="hola()">
+        <input type="checkbox" name="input" id="checkbox">
+        <span class="line line-top"></span>
+        <span class="line line-middle"></span>
+        <span class="line line-bottom"></span>
+    </div> -->
+    <div class="list-container" id="container" data-aos="fade-right" data-aos-duration="2000">
+        <ul class="list-list">
             <li><a href="#box">Inicio</a> </li>
             <li><a href="https://github.com/lizandronarvaez">Mis Proyectos</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -30,12 +37,12 @@
         <hr>
         <h2>Estudiante de Desarrollo Web</h2>
         <div class="dates">
-            <p>👋Hola soy, Lizandro Narvaez Moran</p>
-            <p class="item1">👨‍🎓 Soy una persona autodidacta ademas de ser muy inquieto por aprender cosas nuevas</p>
-            <p class="item2">📘 Actualmente estoy perfecionando mis estudios en Html, Css, y aprendiendo nuevas
-                tecnologias como Javascript,  Jquery,  NodeJs,  ExpressJS y gestores de base de datos como  MYSQL</p>
-            <p class="item3">💭 Busco ampliar mis conocimientos en alguna empresa,ya que mi sueño es conseguir
-                ser un Desarrollador Full-Stack </p>
+            <p>👋Hola soy, <b>Lizandro Narvaez Moran</b> </p>
+            <p class="item1">👨‍🎓 Soy una persona <b>autodidacta</b>  ademas de ser muy inquieto por aprender nuevas tecnologias</p>
+            <p class="item2">📘 Actualmente estoy perfecionando mis estudios en <b>Html</b> ,<b>Css</b> , y aprendiendo nuevas
+                tecnologias como <b>Javascript</b> , <b>Jquery</b> , <b>NodeJs</b> , <b>ExpressJS</b>  y gestores de base de datos como <b>MySql</b></p>
+            <p class="item3">💭 Busco ampliar mis conocimientos en alguna empresa, ya que mi sueño es poder llegar a mi
+                objetivo de ser un <b>Desarrollador Full-Stack</b></p>
         </div>
         <hr>
         <div class="javascript">
@@ -63,6 +70,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
