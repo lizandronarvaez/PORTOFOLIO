@@ -5,33 +5,32 @@
 }
 
 body {
-    background-image: url("https://www.womgp.com/blog/wp-content/uploads/2021/03/Desarrollo-Web-Dibdata.jpg");
-    background-size: 150%;
-    background-position:30%;
+    background-image: url("https://blogs.unitec.mx/content/dam/blogs/imagenes/corp_samara/mitos-de-la-ingenieria-en-sistemas-computacionales-3-compressor.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.hamburger {
+    opacity: 0;
+}
+
 /* Nav list */
 .list-container {
-    background: #00416A;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #E4E5E6, #00416A);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #E4E5E6, #00416A);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-bottom: 10px;
-    
+    opacity: 0;
 }
 
 .list-container ul {
     display: flex;
     justify-content: flex-end;
+    width: 100%;
+    height: 100%;
 }
 
 .list-container ul li {
     border: 1px solid white;
-    background-color: white;
+    background-color: #fff;
     margin: 15px 15px;
     padding: 5px 20px;
     border-radius: 25px;
@@ -40,13 +39,26 @@ body {
 
 .list-container ul li a {
     font-weight: bold;
-    color: black;
+    color: #000;
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.list-container a:hover {
+    color: white;
+}
+
+.list-container ul li:hover {
+    box-shadow: 0 0 20px 0px #000;
+    background-color: ;
+    border-style: none;
+    background-color: grey;
 }
 
 .box {
     width: 700px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, .9);
     margin: 5% auto;
     padding: 30px;
     color: white;
@@ -64,21 +76,24 @@ body {
     font-weight: 100;
     margin: 30px 0 30px;
     text-align: center;
+    font-weight: bold;
 }
 
 .box h2 {
     text-align: center;
-    font-size: 20px;
+    /* font-size: 20px; */
     letter-spacing: 3px;
     font-weight: 100;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 /* Div clase dates y javascript */
 .dates,
 .javascript {
     font-size: 1.1rem;
-    letter-spacing: 0.1rem;
+    word-spacing: 5px;
+    line-height: 25px;
     text-align: left;
     margin-bottom: 50px;
     margin-left: 15px;
@@ -129,6 +144,14 @@ hr:nth-last-child(2) {
     color: white;
 }
 
+.social p:nth-child(1):hover {
+    transform: scale(1.2);
+}
+
+.social p:nth-child(2):hover {
+    transform: scale(1.2);
+}
+
 .social a:hover {
     color: #b9b9b9;
 }
@@ -140,6 +163,7 @@ span {
 }
 
 /* Medias queries@ */
+/*  */
 @media (max-width:600px) {
     .box {
         width: 500px;
@@ -154,13 +178,79 @@ span {
     }
 }
 
+/*  */
 @media (max-width:400px) {
+
     body {
         background-size: cover;
         background-position: 60%;
     }
 
+    #checkbox {
+        display: none;
+    }
+
+    .hamburger {
+        position: relative;
+        padding: 20px;
+        margin-left: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 21px;
+        height: 2px;
+        background-color: #fff;
+        border-radius: 3px;
+        transition:
+            transform .25s, opacity .35s;
+    }
+
+    .line-top {
+        transform: translateY(-7px);
+    }
+
+    .line-bottom {
+        transform: translateY(7px);
+    }
+
+    #checkbox:checked~.line-top {
+        transform: rotate(45deg);
+    }
+
+    #checkbox:checked~.line-middle {
+        transform: translateX(16px);
+    }
+
+    #checkbox:checked~.line-bottom {
+        transform: rotate(-45px);
+    }
+
+    .list-container {
+        width: 100%;
+        display: block;
+        position: absolute;
+    }
+
+    .list-container ul {
+        background-color: #000;
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        pointer-events: none;
+        visibility: hidden;
+    }
+
     .box {
+        visibility: visible;
+        margin-top: 10px;
         width: 340px;
     }
 
