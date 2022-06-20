@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: url("https://blogs.unitec.mx/content/dam/blogs/imagenes/corp_samara/mitos-de-la-ingenieria-en-sistemas-computacionales-3-compressor.jpg");
+    background-image: url("https://agenciawinners.com/wp-content/uploads/2020/07/desarrollo-web-1200x675.png");
+    /* background-image: url("https://cdn.pixabay.com/photo/2021/08/04/13/06/software-developer-6521720_960_720.jpg"); */
     background-size: cover;
     background-repeat: no-repeat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -17,48 +18,46 @@ body {
 
 /* Nav list */
 .list-container {
+    margin-left: auto;
+    width: 800px;
+    height: 70px;
     padding-bottom: 10px;
-    opacity: 0;
+    background-color:rgba(0, 0, 0, .3) ;
 }
 
 .list-container ul {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    height: 100%;
 }
 
 .list-container ul li {
-    border: 1px solid white;
-    background-color: #fff;
-    margin: 15px 15px;
-    padding: 5px 20px;
+    margin: 30px 30px;
+    padding: 2px 5px;
     border-radius: 25px;
     list-style: none;
 }
 
 .list-container ul li a {
+    font-size: 1.1em;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
 }
 
 .list-container a:hover {
-    color: white;
+    color: #000;
 }
 
 .list-container ul li:hover {
     box-shadow: 0 0 20px 0px #000;
     background-color: ;
     border-style: none;
-    background-color: grey;
+    background-color: #fff;
 }
 
 .box {
     width: 700px;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, .7);
     margin: 5% auto;
     padding: 30px;
     color: white;
